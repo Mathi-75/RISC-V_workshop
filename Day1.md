@@ -28,5 +28,23 @@
 
 ### RV_D1SK2_L1_C Program to Compute Sum from 1 to N
 ![images/Screenshot 2025-05-03 004608.png](images/Screenshot%202025-05-03%20004608.png)
+Code:
+```c
+#include<stdio.h>
+int main(){
+  int i,sum=0,n-5;
+  for(int i=1;i<=n;i++){
+    sum +=i;
+  }
+  printf("Sum of first %d natural numbers is %d",n,sum);
+}
+```
 ![images/Screenshot 2025-05-03 004812.png](images/Screenshot%202025-05-03%20004812.png)
+
+Compilation:
+```bash
+cd <Location of the C file>
+gcc sum1ton.c
+./
+./a.out
 
