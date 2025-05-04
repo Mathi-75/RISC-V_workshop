@@ -16,15 +16,14 @@ The 30-hour hands-on workshop provides a beginner-friendly introduction to:
 
 ```text
 MYTH-Workshop/
-├── 01_RISC-V_Assembly/         → Learning basic RISC-V instructions and toolchain
-├── 02_Memory_and_IO/           → Exploring memory access and interfacing in RISC-V
-├── 03_TL-Verilog_Intro/        → Introduction to TL-Verilog syntax and concepts
-├── 04_Designing_Core/          → Building a RISC-V processor core step-by-step
-├── 05_Pipelining/              → Implementing pipelining and handling hazards
-├── 06_Final_Project/           → Integration and testing of the final pipelined CPU
-├── images/                     → Architecture diagrams, waveform snapshots, etc.
+├── Day1.md/           → Learning basic RISC-V instructions and toolchain
+├── Day2.md/           → Exploring memory access and interfacing in RISC-V
+├── Day3.md/           → Introduction to TL-Verilog syntax and concepts
+├── Day4.md/           → Building a RISC-V processor core step-by-step
+├── Day5.md/           → Implementing pipelining and handling hazards
+├── Final_Project/     → Integration and testing of the final pipelined CPU
+├── images/            → Architecture diagrams, waveform snapshots, etc.
 ├── README.md
-└── LICENSE
 
 ```
 
