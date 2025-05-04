@@ -27,6 +27,6 @@
 ## RV_D1SK2- Labwork for RISC-V software toolchain
 
 ### RV_D1SK2_L1_C Program to Compute Sum from 1 to N
-![images/Screenshot 2025-05-03 004608.png](https://github.com/Mathi-75/RISC-V_workshop/blob/839fff9f81f8abe4d21745dac67b3731729dc791/images/Screenshot%202025-05-03%20004608.png)
-![images/Screenshot 2025-05-03 004812.png](https://github.com/Mathi-75/RISC-V_workshop/blob/839fff9f81f8abe4d21745dac67b3731729dc791/images/Screenshot%202025-05-03%20004812.png)
+![images/Screenshot 2025-05-03 004608.png](images/Screenshot%202025-05-03%20004608.png)
+![images/Screenshot 2025-05-03 004812.png](images/Screenshot%202025-05-03%20004812.png)
 
