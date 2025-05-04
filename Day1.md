@@ -4,7 +4,7 @@
 
 ### RV_D1SK1_L1_Introduction
 - Intro to RISC V ISA
-- High level language(Java,C,Python &rarr; Assembly Language(RISC V, x86, Arm) &rarr; Machine Language (0 and 1)
+- High level language(Java,C,Python) &rarr; Assembly Language(RISC V, x86, Arm) &rarr; Machine Language (0 and 1)
 - The Assembly language is implemented by a pre-made Architecture which is created using RTL.
 
 ### RV_D1SK1_L2_From Apps To Hardware
