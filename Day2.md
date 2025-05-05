@@ -28,3 +28,25 @@
 - **Double-word** : Twice the size of a word
   1. For RV32 - Word size = 16
   2. For RV64 - Word size = 32
+
+### RV_D2SK1_L3_Load, Add And Store Instructions With Example
+
+- Consider a scenario where a double word stored in the 16th byte of a memory needs to be loaded to a register(x8). The base address of the doubleword is stored in the register(x23).
+- The instruction for this scenario is 
+```bash
+ld x8, 16(x23)
+```
+   1. Here ld means load doubleword
+   2. x8 is the destination register 'rd'
+   3. 16 is the immediate offset 'imm'
+   4. x23 is the register which stores the base address of the memory stack
+
+- The Instruction size of RISC V is 32 bits
+![Instruction](images/Screenshot%202025-05-05%20183111.png)
+
+   1. opcode(7 bits)     -    decides the instructions like ld.
+   2. funct3(3 bits)     -    extension of opcode if needed
+   3. rs1(5 bits)        -    address of the source register
+   4. rd(5 bits)         -    address of the destination register
+   5. immediate(12 bits) -    value of the offset 
+
