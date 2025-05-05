@@ -140,3 +140,47 @@ riscv64-unknown-elf-objdump -d 1to9_custom.o | less
 ## RV-D2SK3 - Basic verification flow using iverilog
 ### RV_D2SK3_L1_Lab To Run C-Program On RISC-V CPU
 
+- The above programs and methods are simulations.
+- In this module, we see how to actually implement a C program into RISC V processor(picorv32)
+- To clone the PICORV32 Processor
+
+```bash  
+   git clone https://github.com/kunalg123/riscv_workshop_collaterals.git
+```
+- To view the program of PICORV32
+```bash
+   cd riscv_workshop_collaterals/labs
+```
+```bash
+   vim picorv32.v
+```
+press esc and type q to quit
+
+![image](images/Screenshot%202025-05-05%20225428.png)
+
+(OR)
+
+```bash
+   less picorv32.v
+```
+press q to quit
+
+- All code required to convert the C program to hex file is scripted to a single file `rv32im.sh` 
+- To view the script file
+```bash
+   vim rv32im.sh
+```
+![image](images/Screenshot%202025-05-05%20230112.png)
+- To run the script:
+```bash
+   chmod 777 rv32im.sh
+   ./rv32im.sh
+```
+![image](images/Screenshot%202025-05-05%20230253.png)
+- A `hex file` named firmware.hex is created which needs to be load to the testbench through 
+```v
+readmemh("firmware.hex",memory);
+```
+
+
+With this Day 2 ends.
