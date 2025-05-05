@@ -62,3 +62,77 @@ add x8, x24,x8
   4. x8  is the second sourse register 'rs2'
 
 ![image](images/Screenshot%202025-05-05%20185226.png)
+
+### RV_D2SK1_L4_Concluding 32-registers And Their Respective ABI Names
+
+- ``RV64I`` &rarr; RISC-V 64 bit Processor that performs only base integer instructions.  
+- Types of instruction in RV64I:
+  1. I-type : Has both immediate values and registers in the instructions.
+  2. R-type : Has only registers in the instructions.
+  3. S-type : Instructions that involves storing.
+
+- Each register in RV64I has a ABI name for the user to access easily  
+
+![image](images/Screenshot%202025-05-05%20190641.png)  
+
+
+## RV-D2SK2 - Lab work using ABI function calls
+  
+### RV_D2SK2_L1_Study New Algorithm For Sum 1 to N Using ASM
+
+- The Algorithm of [`Sum1ton.c`](Day1.md#rv_d1sk2_l1_c-program-to-compute-sum-from-1-to-n) in Assembly Language
+
+![image](images/Screenshot%202025-05-05%20192316.png)
+
+### RV_D2SK2_L2_Review ASM Function Call
+
+- Create a `.C` file  
+```c
+#include <stdio.h>
+
+extern int load(int x,int y);
+
+int main(){
+    int result = 0;
+    int count = 9;
+    result = load(0x0, count+1);
+    printf("Sum of number from 1 to %d is %d\n",count,result);
+    return 0;
+}
+```
+![image](images/Screenshot%202025-05-05%20193826.png)
+
+- Create a `.S` in the same location.
+```S
+.section .text
+.global load
+.type load, @function
+
+load:
+        add     a4, a0, zero
+        add     a2, a0, a1
+        add     a3, a0, zero
+loop:   add     a4, a3, a4
+        addi    a3, a3, 1
+        blt     a3, a2, loop
+        add     a0, a4, zero
+        ret
+```
+![image](images/Screenshot%202025-05-05%20193856.png)
+
+### RV_D2SK2_L3_Simulate New C Program With Function Call
+
+- Compile the files using RISC V compiler
+```bash
+riscv64-unknown-elf-gcc -ofast -mabi=rv64i -o 1to9_custom.o 1to9_custom.c load.S
+```  
+```bash
+spike pk 1to9_custom.o
+```
+![image](images/Screenshot%202025-05-05%20200214.png)
+
+- To view the Disassembly of the Code:
+```bash
+riscv64-unknown-elf-objdump -d 1to9_custom.o | less
+```
+![image](images/Screenshot%202025-05-05%20200322.png)  
