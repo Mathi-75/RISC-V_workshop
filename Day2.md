@@ -30,7 +30,7 @@
   2. For RV64 - Word size = 32
 
 ### RV_D2SK1_L3_Load, Add And Store Instructions With Example
-
+`Scenario 1`
 - Consider a scenario where a double word stored in the 16th byte of a memory needs to be loaded to a register(x8). The base address of the doubleword is stored in the register(x23).
 - The instruction for this scenario is 
 ```bash
@@ -42,11 +42,23 @@ ld x8, 16(x23)
    4. x23 is the register which stores the base address of the memory stack
 
 - The Instruction size of RISC V is 32 bits
-![Instruction](images/Screenshot%202025-05-05%20183111.png)
+![Instruction](images/Screenshot%202025-05-05%20183111.png)  
 
-   1. opcode(7 bits)     -    decides the instructions like ld.
-   2. funct3(3 bits)     -    extension of opcode if needed
-   3. rs1(5 bits)        -    address of the source register
-   4. rd(5 bits)         -    address of the destination register
-   5. immediate(12 bits) -    value of the offset 
+  `opcode (7 bits)` – Decides the instructions like `ld`  
+  `funct3 (3 bits)` – Extension of opcode if needed  
+  `rs1 (5 bits)` – Address of the source register  
+  `rd (5 bits)` – Address of the destination register  
+  `immediate (12 bits)` – Value of the offset  
 
+`Scenario 2`
+- Consider a scenario where the data loaded to register(x8) is added with the data in register(x24) and stored in register(x8).
+- The instruction for this case is
+```bash
+add x8, x24,x8
+```
+  1. Here add is the instruction
+  2. The first x8 is the desitination register 'rd'
+  3. x24 is a source register 'rs1'
+  4. x8  is the second sourse register 'rs2'
+
+![image](images/Screenshot%202025-05-05%20185226.png)
