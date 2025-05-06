@@ -33,4 +33,4 @@ https://github.com/stevehoover/RISC-V_MYTH_Workshop
 
 ### RV_D3SK1_L3_Labs For Combinational Logic
 
-- (**A.Inverter**)[codes/inverter.v] 
+- [**A.Inverter**](codes/inverter.v)
