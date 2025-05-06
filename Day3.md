@@ -28,5 +28,9 @@ https://github.com/stevehoover/RISC-V_MYTH_Workshop
   1. f = x1 if s=1
   2. f = x2 if s=0
 
-- A mux of higher order can be implemented by chaining Ternary Operator
+- A mux of higher order can be implemented by chaining Ternary Operator  
 ![image](images/Screenshot%202025-05-06%20155543.png)
+
+### RV_D3SK1_L3_Labs For Combinational Logic
+
+- (**A.Inverter**)[codes/inverter.v] 
