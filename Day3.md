@@ -33,7 +33,7 @@ https://github.com/stevehoover/RISC-V_MYTH_Workshop
 
 ### RV_D3SK1_L3_Labs For Combinational Logic
 
-#### [`A. INVERTER`](codes/inverter.tlv)  
+#### [`A. 🔗INVERTER`](codes/inverter.tlv)  
 
 ![inverter](images/Screenshot%202025-05-06%20161311.png)
 
@@ -42,3 +42,19 @@ https://github.com/stevehoover/RISC-V_MYTH_Workshop
 ![vectors](images/Screenshot%202025-05-06%20163226.png)
 
 
+## RV-D3SK2 - Sequential logic
+### RV_D3SK2_L1_Introduction To Sequential Logic And Counter Lab
+
+- Sequential logic is sequenced by a clock signal
+#### [🔗A. Fibonacci Series](codes/fibonacci.tlv)
+![image](images/Screenshot%202025-05-08%20140104.png)  
+
+#### [🔗B. Counter](codes/counter.tlv)
+![image](images/Screenshot%202025-05-08%20141240.png)
+
+### RV_D3SK2_L2_Sequential Calculator Lab
+- Values in Verilog
+![image](images/Screenshot%202025-05-08%20141935.png)
+
+#### [🔗A. Sequential Calculator](codes/seq_calc.tlv)
+![image](images/Screenshot%202025-05-08%20150502.png)
