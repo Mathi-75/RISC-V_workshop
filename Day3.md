@@ -58,3 +58,35 @@ https://github.com/stevehoover/RISC-V_MYTH_Workshop
 
 #### [🔗A. Sequential Calculator](codes/seq_calc.tlv)
 ![image](images/Screenshot%202025-05-08%20150502.png)
+
+## RV-D3SK3 - Pipelined logic
+### RV_D3SK3_L1_Pipelined Logic And Re-Timing
+
+- Pythagoras theorem is a little complex to complete in one cycle, so it is spilt into three cycles.
+![image](images/Screenshot%202025-05-09%20114722.png)
+  1. The values of square is calculated in the first cycle.
+  2. The sum of the squares in next cycle.
+  3. And the square root in next cycle(Practically sqrt takes more than one cycle).
+
+- Timing abstract:
+![image](images/Screenshot%202025-05-09%20121648.png)
+
+- To pass the values from one cycle to another cycle a D - Flip Flop is used.
+
+- TL - Verilog syntax:
+![image](images/Screenshot%202025-05-09%20121819.png)
+
+### RV_D3SK3_L2_Pipeline Logic Advantages And Demo In Platform
+
+#### [`🔗Pythagoras Theorem`](codes/pythagotas_theorem.tlv)
+![image](images/Screenshot%202025-05-09%20123550.png)
+
+### RV_D3SK3_L3_Lab On Error Conditions Within Computation Pipeline
+
+- Identifiers and Types:
+  1. Symbol prefix - $ 
+  2. First token should have two alpha characters.  
+
+### RV_D3SK3_L4_Lab On 2-Cycle Calculator
+#### [`🔗Pipelined Calculator`](codes/Pipelined_calculator.tlv)
+![image](images/Screenshot%202025-05-09%20131833.png)
