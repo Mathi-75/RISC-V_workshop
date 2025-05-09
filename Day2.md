@@ -37,7 +37,7 @@ ___
 `Scenario 1`
 - Consider a scenario where a double word stored in the 16th byte of a memory needs to be loaded to a register(x8). The base address of the doubleword is stored in the register(x23).
 - The instruction for this scenario is 
-```bash
+```assembly
 ld x8, 16(x23)
 ```
    1. Here ld means load doubleword
@@ -57,7 +57,7 @@ ld x8, 16(x23)
 `Scenario 2`
 - Consider a scenario where the data loaded to register(x8) is added with the data in register(x24) and stored in register(x8).
 - The instruction for this case is
-```bash
+```assembly
 add x8, x24,x8
 ```
   1. Here add is the instruction
