@@ -53,6 +53,44 @@ ___
 
 ___
 
+## RV-D4SK3 - RISC-V control logic
+
+### RV_D4SK3_L1_Lab For Register File Read Part1 & RV_D4SK3_L2_Lab For Register File Read Part-2
+
+![image](images/Screenshot%202025-05-09%20220521.png)
+
+___
+
+### RV_D4SK3_L3_Lab For ALU Operations For add/addi
+
+![image](images/Screenshot%202025-05-09%20221104.png)
+
+___
+
+### RV_D4SK3_L4_Lab For Register File Write
+
+![image](images/Screenshot%202025-05-09%20221104.png)
+
+___
+
+### RV_D4SK3_L5_Concept of Array And Register File Details
+
+![image](images/Screenshot%202025-05-09%20221104.png)
+
+___
+
+### RV_D4SK3_L6_Lab For Implementing Branch Instructions & RV_D4SK3_L7_Lab For Completing Branch Instruction Implementation
+
+![image](images/Screenshot%202025-05-09%20222925.png)
+
+___
+
+### RV_D4SK3_L8_Lab To Create Simple Testbench
+
+![image](images/Screenshot%202025-05-09%20222925.png)
+
+___
+
 #### [`🔗FINAL CODE`](codes/Day4_final.tlv)
 
 ___
