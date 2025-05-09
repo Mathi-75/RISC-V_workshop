@@ -18,6 +18,8 @@
 
 - XLEN is the number of **bits** in each register 
 
+___
+
 ### RV_D2SK1_L2_Memory Allocation for Double Words
 
 - Two different ways to load data from Memory to Registers:
@@ -28,6 +30,8 @@
 - **Double-word** : Twice the size of a word
   1. For RV32 - Word size = 16
   2. For RV64 - Word size = 32
+
+___
 
 ### RV_D2SK1_L3_Load, Add And Store Instructions With Example
 `Scenario 1`
@@ -63,6 +67,8 @@ add x8, x24,x8
 
 ![image](images/Screenshot%202025-05-05%20185226.png)
 
+___
+
 ### RV_D2SK1_L4_Concluding 32-registers And Their Respective ABI Names
 
 - ``RV64I`` &rarr; RISC-V 64 bit Processor that performs only base integer instructions.  
@@ -73,7 +79,9 @@ add x8, x24,x8
 
 - Each register in RV64I has a ABI name for the user to access easily  
 
-![image](images/Screenshot%202025-05-05%20190641.png)  
+![image](images/Screenshot%202025-05-05%20190641.png) 
+
+___
 
 
 ## RV-D2SK2 - Lab work using ABI function calls
@@ -83,6 +91,8 @@ add x8, x24,x8
 - The Algorithm of [`Sum1ton.c`](Day1.md#rv_d1sk2_l1_c-program-to-compute-sum-from-1-to-n) in Assembly Language
 
 ![image](images/Screenshot%202025-05-05%20192316.png)
+
+___
 
 ### RV_D2SK2_L2_Review ASM Function Call
 
@@ -120,6 +130,8 @@ loop:   add     a4, a3, a4
 ```
 ![image](images/Screenshot%202025-05-05%20193856.png)
 
+___
+
 ### RV_D2SK2_L3_Simulate New C Program With Function Call
 
 - Compile the files using RISC V compiler
@@ -136,6 +148,8 @@ spike pk 1to9_custom.o
 riscv64-unknown-elf-objdump -d 1to9_custom.o | less
 ```
 ![image](images/Screenshot%202025-05-05%20200322.png)  
+
+___
 
 ## RV-D2SK3 - Basic verification flow using iverilog
 ### RV_D2SK3_L1_Lab To Run C-Program On RISC-V CPU
@@ -184,3 +198,4 @@ readmemh("firmware.hex",memory);
 
 
 With this Day 2 ends.
+___

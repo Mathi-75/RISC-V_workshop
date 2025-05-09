@@ -7,6 +7,8 @@
 https://github.com/stevehoover/RISC-V_MYTH_Workshop
 ```
 
+___
+
 ### RV_D3SK1_L1_Introduction To Logic Gates
 
 - The Basic Logic Gates:
@@ -21,6 +23,8 @@ https://github.com/stevehoover/RISC-V_MYTH_Workshop
 - Boolean Operators:
 ![image](images/Screenshot%202025-05-06%20152230.png)
 
+___
+
 ### RV_D3SK1_L2_Basic Mux Implementation And Introduction To Makerchip
 
 - **2:1 MUX** implementation using Ternery operator:
@@ -30,6 +34,8 @@ https://github.com/stevehoover/RISC-V_MYTH_Workshop
 
 - A mux of higher order can be implemented by chaining Ternary Operator  
 ![image](images/Screenshot%202025-05-06%20155543.png)
+
+___
 
 ### RV_D3SK1_L3_Labs For Combinational Logic
 
@@ -41,6 +47,7 @@ https://github.com/stevehoover/RISC-V_MYTH_Workshop
 
 ![vectors](images/Screenshot%202025-05-06%20163226.png)
 
+___
 
 ## RV-D3SK2 - Sequential logic
 ### RV_D3SK2_L1_Introduction To Sequential Logic And Counter Lab
@@ -52,12 +59,16 @@ https://github.com/stevehoover/RISC-V_MYTH_Workshop
 #### [🔗B. Counter](codes/counter.tlv)
 ![image](images/Screenshot%202025-05-08%20141240.png)
 
+___
+
 ### RV_D3SK2_L2_Sequential Calculator Lab
 - Values in Verilog
 ![image](images/Screenshot%202025-05-08%20141935.png)
 
 #### [🔗A. Sequential Calculator](codes/seq_calc.tlv)
 ![image](images/Screenshot%202025-05-08%20150502.png)
+
+___
 
 ## RV-D3SK3 - Pipelined logic
 ### RV_D3SK3_L1_Pipelined Logic And Re-Timing
@@ -76,10 +87,14 @@ https://github.com/stevehoover/RISC-V_MYTH_Workshop
 - TL - Verilog syntax:
 ![image](images/Screenshot%202025-05-09%20121819.png)
 
+___
+
 ### RV_D3SK3_L2_Pipeline Logic Advantages And Demo In Platform
 
 #### [`🔗Pythagoras Theorem`](codes/pythagotas_theorem.tlv)
 ![image](images/Screenshot%202025-05-09%20123550.png)
+
+___
 
 ### RV_D3SK3_L3_Lab On Error Conditions Within Computation Pipeline
 
@@ -87,6 +102,45 @@ https://github.com/stevehoover/RISC-V_MYTH_Workshop
   1. Symbol prefix - $ 
   2. First token should have two alpha characters.  
 
+___
+
 ### RV_D3SK3_L4_Lab On 2-Cycle Calculator
-#### [`🔗Pipelined Calculator`](codes/Pipelined_calculator.tlv)
-![image](images/Screenshot%202025-05-09%20131833.png)
+#### [`🔗2-Cycle Calculator`](codes/Pipelined_calculator.tlv)
+![image](images/Screenshot%202025-05-09%20133622.png
+)
+
+___
+
+## RV-D3SK4 - Validity
+### RV_D3SK4_L1_Introduction To Validity And Its Advantages
+
+- Validity provides
+  1. Easier Debug
+  2. Cleaner design
+  3. Better error checking
+  4. Automated clock gating  
+
+___
+
+### RV_D3SK4_L2_Lab On Validity And Valid When Condition
+
+#### [`🔗Validity condition`](codes/validity.tlv)
+![image](images/Screenshot%202025-05-09%20155245.png)
+
+___
+
+### RV_D3SK4_L3_Lab To Compute Total Distance
+
+#### [`🔗Total Distance`](codes/total_distance.tlv)
+![image](images/Screenshot%202025-05-09%20160519.png)
+
+___
+
+### RV_D3SK4_L4_Lab on 2-cycle Calculator with Validity
+
+#### [`🔗2-Cycle Calculator with Validity`](codes/2-cycle-calc-with-validity.tlv)
+![image](images/Screenshot%202025-05-09%20162622.png)
+
+___
+
+

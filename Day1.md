@@ -7,12 +7,16 @@
 - High level language(Java,C,Python) &rarr; Assembly Language(RISC V, x86, Arm) &rarr; Machine Language (0 and 1)
 - The Assembly language is implemented by a pre-made Architecture which is created using RTL.
 
+___
+
 ### RV_D1SK1_L2_From Apps To Hardware
 - Apps &rarr; System Software &rarr; OS(windows, linux, macos) &rarr; Compiler &rarr; Assembler &rarr; Harware
 - OS:  
   1. Handle IO operations
   2. Allocate memory
   3. Low Level System Functions
+
+___
 
 ### RV_D1SK1_L3_Detailed Description of Course Content
 - C program
@@ -23,6 +27,8 @@
   4. Floating point Instructions (RV64F & RV64D)
 - Application Binary Interface (Registers)
 - Memory allocation and Stack Pointer
+
+___
 
 ## RV_D1SK2- Labwork for RISC-V software toolchain
 
@@ -47,4 +53,5 @@ cd <Location of the C file>
 gcc sum1ton.c
 ./
 ./a.out
-
+```
+___
