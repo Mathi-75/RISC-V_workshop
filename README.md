@@ -21,7 +21,7 @@ MYTH-Workshop/
 ├── Day3.md/           → Introduction to TL-Verilog syntax and concepts
 ├── Day4.md/           → Building a RISC-V processor core step-by-step
 ├── Day5.md/           → Implementing pipelining and handling hazards
-├── Final_Project/     → Integration and testing of the final pipelined CPU
+├── codes/             → Codes of the Labs
 ├── images/            → Architecture diagrams, waveform snapshots, etc.
 ├── README.md
 
